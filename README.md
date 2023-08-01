@@ -3,12 +3,12 @@
 <p align="center">An <i>awesome</i> Python script to automate bing searches, quizzes, polls, and more across multiple Bing Reward accounts.</p>
 
 <p align="right"> 
-        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/><img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"/><img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/><a href="https://www.buymeacoffee.com/prem.ium" target="_blank"><img align="right" src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"/></a><a href="https://github.com/sponsors/Prem-ium" target="_blank">
-        <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AA" alt="Github Sponsor"/></a>
+        <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/><img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"/><img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
-## Archived 
-As of 7/20/2023, this project is archived. No further updates, feature additions, or technical support will be provided. A read-only mode is hereby instated.
+## Fork Updates 
+
+After the repository was archived, webdriver-manager was updated, rendering this script temporarily useless. I fixed the issue for Chrome but haven't tested it with Edge and Firefox yet. If there's demand for those features in the future, I'll look into it. Enjoy the upcoming updates!
 
 ## Features
 
@@ -46,6 +46,7 @@ Run locally:
 ```sh
    python main.py
 ```
+I personally use PM2 to run the python script. Download and read more at: [PM2](https://pm2.keymetrics.io)
 
 ### Docker Container
 View on [Docker Hub](https://hub.docker.com/repository/docker/nelsondane/bing-rewards)
@@ -109,28 +110,6 @@ To run this project, you will need to add the following environment variables to
 | `DEBUGGING`           | True or False -- Whether you wish to log the bot's error and stacktrace. Defaults to False.                                    |
 | `DAILY_SETS`          | True or False -- Whether you wish to complete daily sets, this feature is unavailable in a few markets like India. Defaults to True. |
 
-## Donations
-I've been working on this project for a few months now, and I'm really happy with how it's turned out. It's also been a helpful tool for users to earn some extra money with Bing Rewards. I'm currently working on adding new features to the script and working on other similar programs to generate passive income. I'm also working on making the script more user-friendly and accessible to a wider audience.
-
-I'm accepting donations through <a href="https://github.com/sponsors/Prem-ium">GitHub Sponsors (No Fees!)</a> or <a href="https://www.buymeacoffee.com/prem.ium">Buy-Me-Coffee</a>. Any amount you can donate will be greatly appreciated.
-  
-<a href="https://github.com/sponsors/Prem-ium" target="_blank">
-        <img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" alt="GitHub Sponsor" img width="15%">
-</a>
-<a href="https://www.buymeacoffee.com/prem.ium" target="_blank">
-        <img src="https://raw.githubusercontent.com/Prem-ium/youtube-analytics-bot/main/output-examples/media/coffee-logo.png" alt="Buy Me A Coffee" img width="15%">
-</a>
-
-
-Your donations will help me to cover the costs of hosting the project, developing new features, and marketing the project to a wider audience.
-Thank you for your support!
-
-## Other Bing Automation
-You can use this Selenium IDE script to help create new Microsoft Accounts slightly faster. (Semi-Automation, captcha and email verification manual):
-You can find the script in the [Selenium-IDE-Scripts/Bing](https://github.com/Prem-ium/Selenium-IDE-Scripts/tree/master/Bing) directory of my Selenium IDE Project(s) repository.
-
-I have also created an automation script that can close any suspend accounts you have of Bing that you can gain access to by placing a donation of $15+ on my GitHub Sponsor. It is only really useful for people like myself who manages multiple accounts at once. After placing a donation, contact me you would like to receive the script.
-
 ## Earning Potential:
 The following is a conservatively prediction of potential points/earnings per month using this bot w/ lvl 2 account:
 
@@ -144,6 +123,8 @@ Daily Sets: (30*30) = 900
 
 
 This adds up to 9000 points, conservatively (not accounting for streak bonuses or more activities which usually net very high, random amount of points), which ends up being a minimum of $6.92/per month per account on level 2. $41.52/ per month with an instance of 6 conncurrent level 2 reward accounts.
+
+ONLY USE 5 ACCOUNTS PER IP
 
 ## License & Contributing
 

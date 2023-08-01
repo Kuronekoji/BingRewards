@@ -329,8 +329,8 @@ def get_driver(isMobile = False):
             driver = webdriver.Chrome(options=options)
         else:
             driver = webdriver.Chrome(
-                service=Service(ChromeDriverManager(cache_valid_range=30).install()),
-                options=options)
+                service=Service(ChromeDriverManager(driver_version="114.0.5735.90").install()),
+                options=options,)
     elif BROWSER == "edge":
         driver = webdriver.Edge(
             service=Service(EdgeChromiumDriverManager(cache_valid_range=30).install()),
@@ -1512,7 +1512,7 @@ def main():
                 # Run Bing Rewards Automation
                 start_rewards()
             hours = random.randint(3, 8)
-            print(f'Bing Rewards Automation Complete!\n{datetime.datetime.now(TZ)}\n\n------------------------------------------------------------\n\nIf you like this project, please consider showing support to the developer!\nGitHub Profile:\t\t\t\thttps://github.com/Prem-ium\nGitHub Sponsor Donations (No fees):\thttps://github.com/sponsors/Prem-ium\nBuy-Me-A-Coffee Donations:\thttps://www.buymeacoffee.com/prem.ium\n\n------------------------------------------------------------\n\nSleeping for {hours} hours before restarting Bing Rewards Automation.\nThank you for supporting Prem-ium\'s Github Repository!\n\n------------------------------------------------------------\n')
+            print(f'Bing Rewards Automation Complete!\n{datetime.datetime.now(TZ)}\n\n------------------------------------------------------------\n\nIf you like this project, please consider showing support to the developer!\nGitHub Profile:\t\t\t\thttps://github.com/Prem-ium\nGitHub Fork Updater:\t\t\thttps://github.com/Kuronekoji\n\n------------------------------------------------------------\n\nSleeping for {hours} hours before restarting Bing Rewards Automation.\n\n ------------------------------------------------------------\n')
             sleep(3600 * hours)
         except Exception as e:
             # Catch any errors, print them, and restart (in hopes of it being non-fatal)
