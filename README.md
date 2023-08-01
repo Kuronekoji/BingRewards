@@ -52,13 +52,16 @@ To run the python script in PM2:
 
 1. Do exactly as above but instead open a cmd where main.py is stored
 2. Run the script through pm2 if you have installed it correctly:
-```pm2 start main.py
+```sh
+   pm2 start main.py
 ```
 3. Run the logs command to see the script output:
-```pm2 logs
+```sh
+   pm2 logs
 ```
 4. If you would like to stop the script run:
-```pm2 stop main.py
+```sh
+   pm2 stop main.py
 ```
 
 ### Docker Container
