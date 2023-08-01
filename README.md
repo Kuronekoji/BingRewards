@@ -2,7 +2,7 @@
 
 <p align="center">An <i>awesome</i> Python script to automate bing searches, quizzes, polls, and more across multiple Bing Reward accounts.</p>
 
-<p align="right"> 
+<p align="center"> 
         <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"/><img src="https://img.shields.io/badge/-selenium-%43B02A?style=for-the-badge&logo=selenium&logoColor=white"/><img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"/>
 </p>
 
@@ -47,6 +47,19 @@ Run locally:
    python main.py
 ```
 I personally use PM2 to run the python script. Download and read more at: [PM2](https://pm2.keymetrics.io)
+
+To run the python script in PM2:
+
+1. Do exactly as above but instead open a cmd where main.py is stored
+2. Run the script through pm2 if you have installed it correctly:
+```pm2 start main.py
+```
+3. Run the logs command to see the script output:
+```pm2 logs
+```
+4. If you would like to stop the script run:
+```pm2 stop main.py
+```
 
 ### Docker Container
 View on [Docker Hub](https://hub.docker.com/repository/docker/nelsondane/bing-rewards)
